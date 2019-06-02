@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Hacker News comments",
-    "version": "0.1",
+    "version": "1.0",
     "description": "A little extension for marking good comments on a Hacker News post",
 
     "browser_specific_settings": {
