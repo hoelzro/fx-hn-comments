@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Hacker News comments",
+    "version": "0.1",
+    "description": "A little extension for marking good comments on a Hacker News post",
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "hn-comments@hoelz.ro"
+        }
+    },
+
+    "permissions": [
+        "storage",
+        "menus"
+    ],
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://news.ycombinator.com/item?id=*"],
+            "js": ["content-script.js"],
+            "css": ["content-script.css"]
+        }
+    ]
+}
